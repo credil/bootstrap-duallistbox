@@ -133,6 +133,10 @@
       filter(dualListbox, 2);
     }
     refreshInfo(dualListbox);
+
+    var e = $.Event("dualListbox_refresh", {"items": dualListbox.elements});
+    dualListbox.element.trigger(e);
+
   }
 
   function filter(dualListbox, selectIndex) {
