@@ -134,7 +134,7 @@
     }
     refreshInfo(dualListbox);
 
-    var e = $.Event("dualListbox_refresh", {"items": dualListbox.elements});
+    var e = $.Event("dualListbox_refresh", {"items": dualListbox});
     dualListbox.element.trigger(e);
 
   }
